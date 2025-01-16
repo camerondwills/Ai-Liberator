@@ -5,12 +5,12 @@ const features = [
   {
     icon: <Zap className="h-8 w-8 text-primary" />,
     title: "Advanced Jailbreak",
-    description: "Transform any prompt into an unrestricted format that AI models will respond to"
+    description: "Transform any prompt into a jailbroken format that AI models will respond to"
   },
   {
     icon: <ListChecks className="h-8 w-8 text-primary" />,
     title: "Multiple AI Models",
-    description: "Support for 20+ AI models including GPT-4, Claude, Gemini, and more"
+    description: "Support for 20+ AI models including ChatGPT, Claude, Gemini, and more"
   },
   {
     icon: <Copy className="h-8 w-8 text-primary" />,

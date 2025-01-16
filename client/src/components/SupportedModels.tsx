@@ -22,13 +22,13 @@ const modelCategories = [
   {
     name: "Google",
     models: [
-      "GEMINI EXPERIMENTAL 1206",
-      "GEMINI FLASH 2.0",
-      "GEMINI EXPERIMENTAL 1114",
-      "GEMINI-1.5-PRO-002",
-      "GEMINI-1.5-FLASH-002",
-      "GEMINI 1.5 PRO EXPERIMENTAL 0801",
-      "GEMINI 1.5 PRO"
+      "Gemini Experimental 1206",
+      "Gemini Flash 2.0",
+      "Gemini Experimental 1114",
+      "Gemini-1.5-PRO-002",
+      "Gemini-1.5-FLASH-002",
+      "Gemini 1.5 PRO Experimental 0801",
+      "Gemini 1.5 PRO"
     ]
   },
   {

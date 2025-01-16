@@ -12,11 +12,11 @@ export default function Hero() {
           {/* Left Column - Text Content */}
           <div>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/60">
-              #1 AI Jailbreak Tool for All Models
+              #1 AI Jailbreak Tool
             </h1>
 
             <p className="text-xl md:text-2xl text-muted-foreground mb-12">
-              Transform any AI model into its unrestricted form. Advanced jailbreak techniques for GPT-4, Claude, Gemini & 20+ AI models. Safe, proven methods to unlock AI's full potential.
+              Free the AI from it's restrictions. Advanced jailbreak prompt converter for ChatGPT, Claude, Gemini & 20+ AI models.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
