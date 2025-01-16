@@ -8,7 +8,7 @@ export default function Download() {
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
           Get Started with AI Liberator
         </h2>
-        
+
         <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
           Download AI Liberator now and experience unrestricted AI capabilities. Available on Android with iOS coming soon.
         </p>
@@ -19,10 +19,11 @@ export default function Download() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button size="lg" className="w-full sm:w-auto">
-              <SiGoogleplay className="mr-2 h-5 w-5" />
-              Download on Google Play
-            </Button>
+            <img 
+              src="/GetItOnGooglePlay_Badge.png" 
+              alt="Get it on Google Play"
+              className="h-[60px] w-auto"
+            />
           </a>
         </div>
       </div>

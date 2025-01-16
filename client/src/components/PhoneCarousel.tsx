@@ -34,11 +34,11 @@ export default function PhoneCarousel() {
   }, []);
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full h-[600px] flex items-center justify-center">
       {images.map((image, index) => (
         <div
           key={index}
-          className="absolute inset-0 transition-opacity duration-1000"
+          className="absolute transition-opacity duration-1000"
           style={{
             opacity: currentIndex === index ? (isTransitioning ? 0 : 1) : 0,
           }}

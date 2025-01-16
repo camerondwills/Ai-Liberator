@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { SiGoogleplay } from "react-icons/si";
 import { ArrowRight } from "lucide-react";
 import PhoneCarousel from "./PhoneCarousel";
 
@@ -26,11 +25,13 @@ export default function Hero() {
                 href="https://play.google.com/store/apps/details?id=com.ai.liberator"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="w-full sm:w-auto"
               >
-                <Button size="lg" className="w-full sm:w-auto">
-                  <SiGoogleplay className="mr-2 h-5 w-5" />
-                  Download for Android
-                </Button>
+                <img 
+                  src="/GetItOnGooglePlay_Badge.png" 
+                  alt="Get it on Google Play"
+                  className="h-[60px] w-auto"
+                />
               </a>
 
               <Button size="lg" variant="outline" disabled>
