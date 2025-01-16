@@ -24,7 +24,6 @@ export function SEO({
   ]
 }: SEOProps) {
   return (
-    <HelmetProvider>
       <Helmet>
         <title>{title}</title>
         <meta name="description" content={description} />
@@ -37,6 +36,5 @@ export function SEO({
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
       </Helmet>
-    </HelmetProvider>
   );
 }
