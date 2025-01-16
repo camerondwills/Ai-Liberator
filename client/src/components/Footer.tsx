@@ -8,8 +8,22 @@ export default function Footer() {
         <Separator className="mb-8" />
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} AI Liberator. All rights reserved.
+          <div className="flex flex-col items-center md:items-start gap-2">
+            <div className="text-sm text-muted-foreground">
+              © {new Date().getFullYear()} AI Liberator. All rights reserved.
+            </div>
+            <div className="text-sm text-muted-foreground">
+              Special thanks to{" "}
+              <a 
+                href="https://github.com/elder-plinius" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                pliny
+              </a>{" "}
+              for his discoveries
+            </div>
           </div>
 
           <div className="flex gap-6">

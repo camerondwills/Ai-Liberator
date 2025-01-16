@@ -74,7 +74,7 @@ const modelCategories = [
     name: "Others",
     models: [
       "Apple Intelligence 18.2",
-      "Nova Models",
+      "Amazon Nova Models",
       "Nous (Hermes 3 70B)",
       "Perplexity",
       "REFLECTION-70B",
@@ -111,6 +111,10 @@ export default function SupportedModels() {
             </Card>
           ))}
         </div>
+
+        <p className="text-center text-muted-foreground mt-8">
+          (more coming soon!)
+        </p>
       </div>
     </section>
   );
