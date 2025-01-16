@@ -1,17 +1,7 @@
-import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import PhoneCarousel from "./PhoneCarousel";
-import { useIsMobile } from "@/hooks/useIsMobile"; // Added import
 
 export default function Hero() {
-  const isMobile = useIsMobile(); // Added hook usage
-  const isAndroid = /android/i.test(navigator.userAgent); // Added Android detection
-
-  const handleGetApp = () => {
-    // Add any analytics or other actions here if needed
-    console.log("Android App prompt clicked");
-  };
-
   return (
     <div className="relative min-h-[80vh] flex items-center px-4 py-20">
       {/* Background gradient */}
@@ -30,24 +20,17 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              {isAndroid && isMobile ? (
-                <Button size="lg" onClick={handleGetApp} className="w-fit">
-                  Get the Android App
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              ) : (
-                <a 
-                  href="https://play.google.com/store/apps/details?id=com.ai.liberator"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img 
-                    src="/GetItOnGooglePlay_Badge.png" 
-                    alt="Get it on Google Play"
-                    className="h-[60px] w-auto"
-                  />
-                </a>
-              )}
+              <a 
+                href="https://play.google.com/store/apps/details?id=com.ai.liberator"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img 
+                  src="/GetItOnGooglePlay_Badge.png" 
+                  alt="Get it on Google Play"
+                  className="h-[60px] w-auto"
+                />
+              </a>
             </div>
           </div>
 
