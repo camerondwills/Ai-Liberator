@@ -22,7 +22,7 @@ export default function Footer() {
               >
                 pliny
               </a>{" "}
-              for his discoveries
+              for his work.
             </div>
           </div>
 
