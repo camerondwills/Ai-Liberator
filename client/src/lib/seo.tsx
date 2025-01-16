@@ -22,9 +22,10 @@ export function SEO({
     "jailbreak ai models",
     "ai freedom tool"
   ],
-  url = "https://ailiberator.com"
+  url = typeof window !== 'undefined' ? window.location.origin : ''
 }: SEOProps) {
-  const imageUrl = `${url}/social-share.png`;
+  const baseUrl = url || (typeof window !== 'undefined' ? window.location.origin : '');
+  const imageUrl = `${baseUrl}/social-share.png`;
 
   return (
     <HelmetProvider>
