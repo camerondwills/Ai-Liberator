@@ -5,7 +5,7 @@
     "namespace": "android_app",
     "package_name": "com.ai.liberator",
     "sha256_cert_fingerprints": [
-      "${process.env.APP_SHA256_FINGERPRINT}"
+      "48:F0:14:A2:96:77:12:19:65:FB:EB:5D:4E:3C:0E:E2:F3:13:12:B5:AA:FE:F1:66:E4:49:C4:98:1B:F1:58:E9"
     ]
   }
 }]
