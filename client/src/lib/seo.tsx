@@ -40,12 +40,13 @@ export function SEO({
         <meta property="og:image" content={`${origin}/social-share.png`} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="AI Liberator Preview" />
         <meta property="og:site_name" content="AI Liberator" />
         
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={imageUrl} />
+        <meta name="twitter:image" content={`${origin}/social-share.png`} />
       </Helmet>
   );
 }
