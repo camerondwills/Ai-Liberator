@@ -39,7 +39,8 @@ export function SEO({
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={url} />
-        <meta property="og:image" content={`${url}/social-share.png`} />
+        <meta property="og:image" content={`${url.replace(/\/$/, "")}/social-share.png`} />
+        <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
@@ -47,7 +48,7 @@ export function SEO({
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={`${url}/social-share.png`} />
+        <meta name="twitter:image" content={`${url.replace(/\/$/, "")}/social-share.png`} />
 
         {/* Additional SEO */}
         <link rel="canonical" href={url} />
