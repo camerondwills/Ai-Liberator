@@ -8,7 +8,7 @@ interface SEOProps {
 }
 
 export function SEO({
-  title = "AI Jailbreak - Most Advanced AI Model Unlocking Tool (2024)",
+  title = "AI Jailbreak - Most Advanced AI Model Unlocking Tool (2025)",
   description = "Ultimate AI jailbreak tool for GPT-4, Claude, Gemini & 20+ models. Transform any prompt into unrestricted formats with proven jailbreak techniques. Safe, ethical unlocking.",
   keywords = [
     "ai jailbreak",
