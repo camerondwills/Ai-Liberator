@@ -7,10 +7,9 @@ A modern, responsive landing page template built with React, TypeScript, and Tai
 
 - **Frontend**: React + TypeScript + Vite
 - **Styling**: Tailwind CSS + Shadcn UI
-- **Backend**: Express.js
-- **Database**: DrizzleORM with PostgreSQL
+- **Backend**: Express.js (static file serving)
 - **Routing**: Wouter
-- **State Management**: React Query
+- **Analytics**: Google Analytics + Google Tag Manager
 - **Environment**: Node.js
 
 ## Features
@@ -50,8 +49,7 @@ npm run dev
 │       ├── hooks/       # Custom React hooks
 │       ├── lib/         # Utilities and configs
 │       └── pages/       # Page components
-├── server/              # Backend code
-└── db/                  # Database schema and config
+└── server/              # Simple Express server for static serving
 ```
 
 ## Customization Guide
@@ -84,7 +82,6 @@ npm run dev
 
 - Run `npm run dev` for development with hot reload
 - Run `npm run build` to create production build
-- Run `npm run check` for TypeScript checks
 
 ## License
 
