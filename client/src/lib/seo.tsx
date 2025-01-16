@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 interface SEOProps {
   title?: string;
@@ -22,26 +22,28 @@ export function SEO({
   url = "https://ailiberator.com"
 }: SEOProps) {
   return (
-    <Helmet>
-      <title>{title}</title>
-      <meta name="description" content={description} />
-      <meta name="keywords" content={keywords.join(", ")} />
+    <HelmetProvider>
+      <Helmet>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta name="keywords" content={keywords.join(", ")} />
 
-      {/* Open Graph */}
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content={url} />
+        {/* Open Graph */}
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={url} />
 
-      {/* Twitter Card */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
 
-      {/* Additional SEO */}
-      <link rel="canonical" href={url} />
-      <meta name="robots" content="index, follow" />
-      <meta name="author" content="AI Liberator" />
-    </Helmet>
+        {/* Additional SEO */}
+        <link rel="canonical" href={url} />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="AI Liberator" />
+      </Helmet>
+    </HelmetProvider>
   );
 }

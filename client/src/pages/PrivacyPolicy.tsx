@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -23,7 +23,7 @@ export default function PrivacyPolicy() {
           <Card>
             <CardContent className="p-6 md:p-8">
               <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
-              
+
               <div className="prose prose-gray dark:prose-invert">
                 <p>Last updated: {new Date().toLocaleDateString()}</p>
 

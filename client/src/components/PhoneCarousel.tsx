@@ -1,46 +1,55 @@
-import { useEffect } from "react";
-import useEmblaCarousel from "embla-carousel-react";
+import { useState, useEffect } from "react";
 
 const SLIDE_INTERVAL = 3000; // 3 seconds per slide
 
+const images = [
+  {
+    src: "/phone-mockup.png",
+    alt: "AI Liberator App Interface 1"
+  },
+  {
+    src: "/phone-mockup-2.png",
+    alt: "AI Liberator App Interface 2"
+  },
+  {
+    src: "/phone-mockup-3.png",
+    alt: "AI Liberator App Interface 3"
+  }
+];
+
 export default function PhoneCarousel() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   useEffect(() => {
-    if (emblaApi) {
-      const interval = setInterval(() => {
-        emblaApi.scrollNext();
-      }, SLIDE_INTERVAL);
+    const interval = setInterval(() => {
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setCurrentIndex((current) => (current + 1) % images.length);
+        setIsTransitioning(false);
+      }, 500); // Half of the transition duration
+    }, SLIDE_INTERVAL);
 
-      return () => clearInterval(interval);
-    }
-  }, [emblaApi]);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <div className="overflow-hidden" ref={emblaRef}>
-      <div className="flex">
-        <div className="flex-[0_0_100%] min-w-0">
+    <div className="relative w-full">
+      {images.map((image, index) => (
+        <div
+          key={index}
+          className="absolute inset-0 transition-opacity duration-1000"
+          style={{
+            opacity: currentIndex === index ? (isTransitioning ? 0 : 1) : 0,
+          }}
+        >
           <img
-            src="/phone-mockup.png"
-            alt="AI Liberator App Interface 1"
+            src={image.src}
+            alt={image.alt}
             className="max-w-[300px] w-full mx-auto"
           />
         </div>
-        <div className="flex-[0_0_100%] min-w-0">
-          <img
-            src="/phone-mockup-2.png"
-            alt="AI Liberator App Interface 2"
-            className="max-w-[300px] w-full mx-auto"
-          />
-        </div>
-        <div className="flex-[0_0_100%] min-w-0">
-          <img
-            src="/phone-mockup-3.png"
-            alt="AI Liberator App Interface 3"
-            className="max-w-[300px] w-full mx-auto"
-          />
-        </div>
-      </div>
+      ))}
     </div>
   );
 }
