@@ -8,16 +8,19 @@ interface SEOProps {
 }
 
 export function SEO({
-  title = "AI Liberator - ChatGPT Jailbreak & AI Hack Tool",
-  description = "Unlock AI's full potential with AI Liberator. The most advanced ChatGPT jailbreak and AI hack tool supporting GPT-4, Claude, Gemini, and more.",
+  title = "AI Jailbreak - Most Advanced AI Model Unlocking Tool (2024)",
+  description = "Ultimate AI jailbreak tool for GPT-4, Claude, Gemini & 20+ models. Transform any prompt into unrestricted formats with proven jailbreak techniques. Safe, ethical unlocking.",
   keywords = [
-    "ChatGPT jailbreak",
-    "ai hack",
     "ai jailbreak",
-    "jailbreak ai",
+    "how to jailbreak ai",
+    "chatgpt jailbreak",
+    "ai model unlock",
     "gpt4 jailbreak",
     "claude jailbreak",
-    "gemini jailbreak"
+    "gemini jailbreak",
+    "ai unlock tool",
+    "jailbreak ai models",
+    "ai freedom tool"
   ],
   url = "https://ailiberator.com"
 }: SEOProps) {
