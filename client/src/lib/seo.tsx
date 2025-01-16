@@ -39,9 +39,11 @@ export function SEO({
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
         <meta property="og:url" content={url} />
-        <meta property="og:image" content={`${url.replace(/\/$/, "")}/social-share.png`} />
-        <meta property="og:image:secure_url" content={`${url.replace(/\/$/, "")}/social-share.png`} />
+        <meta property="og:image" content={`${url}/social-share.png`} />
+        <meta property="og:image:url" content={`${url}/social-share.png`} />
+        <meta property="og:image:secure_url" content={`${url}/social-share.png`} />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
