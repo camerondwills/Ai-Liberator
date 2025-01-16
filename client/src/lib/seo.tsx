@@ -53,16 +53,7 @@ export function SEO({
 
         
 
-        {/* Global Site Tag (gtag.js) - Google Analytics */}
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${gtagId}`} />
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${gtagId}');
-          `}
-        </script>
+        {/* GA4 is initialized in index.html */}
       </Helmet>
     </HelmetProvider>
   );
