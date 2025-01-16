@@ -20,12 +20,11 @@ export default function Hero() {
               Break free from AI restrictions! Support for GPT-4, Claude, Gemini, and 20+ AI models. Transform any prompt into an unrestricted conversation.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col gap-4">
               <a 
                 href="https://play.google.com/store/apps/details?id=com.ai.liberator"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto"
               >
                 <img 
                   src="/GetItOnGooglePlay_Badge.png" 
@@ -34,7 +33,7 @@ export default function Hero() {
                 />
               </a>
 
-              <Button size="lg" variant="outline" disabled>
+              <Button size="lg" variant="outline" disabled className="w-fit">
                 iOS Coming Soon
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
