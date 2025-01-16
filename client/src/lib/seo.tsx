@@ -33,7 +33,7 @@ export function SEO({
         <meta name="keywords" content={keywords.join(", ")} />
         
         <link rel="canonical" href={origin} />
-        <meta property="og:url" content={origin} />
+        <meta property="og:url" content="https://ailiberator.com" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
@@ -42,8 +42,7 @@ export function SEO({
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="AI Liberator Preview" />
         <meta property="og:site_name" content="AI Liberator" />
-        <meta property="fb:app_id" content="1234567890" /> {/* Replace with your actual Facebook App ID */}
-        <meta property="og:url" content="https://ailiberator.com" />
+        <meta property="fb:app_id" content="" />
         
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
