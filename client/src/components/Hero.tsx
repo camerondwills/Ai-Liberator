@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { SiGoogleplay } from "react-icons/si";
 import { ArrowRight } from "lucide-react";
+import PhoneCarousel from "./PhoneCarousel";
 
 export default function Hero() {
   return (
@@ -39,14 +40,9 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Column - Phone Mockup */}
+          {/* Right Column - Phone Carousel */}
           <div className="relative flex justify-center">
-            {/* This is where the phone mockup image will go */}
-            <img 
-              src="/phone-mockup.png" 
-              alt="AI Liberator App Interface" 
-              className="max-w-[300px] w-full"
-            />
+            <PhoneCarousel />
           </div>
         </div>
       </div>
