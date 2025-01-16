@@ -35,14 +35,17 @@ export function SEO({
         <meta name="keywords" content={keywords.join(", ")} />
 
         {/* Open Graph */}
+        <meta property="og:site_name" content="AI Liberator" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={url} />
         <meta property="og:image" content={`${url.replace(/\/$/, "")}/social-share.png`} />
+        <meta property="og:image:secure_url" content={`${url.replace(/\/$/, "")}/social-share.png`} />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="AI Liberator - Advanced AI Jailbreak Tool" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
