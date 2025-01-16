@@ -40,21 +40,42 @@ const modelCategories = [
     ]
   },
   {
+    name: "Alibaba",
+    models: [
+      "QWEN QWQ",
+      "QWEN 2.5 CODER",
+      "QWEN 2",
+      "QWEN"
+    ]
+  },
+  {
+    name: "DeepSeek",
+    models: [
+      "DEEPSEEK-R1-LITE",
+      "DeepSeek 2",
+      "DeepSeek"
+    ]
+  },
+  {
+    name: "Mistral",
+    models: [
+      "Mistral Large 2",
+      "Mistral Large (Le Chat)"
+    ]
+  },
+  {
+    name: "NVIDIA",
+    models: [
+      "LLAMA-3.1-NEMOTRON-70B",
+      "NVIDIA NEMOTRON-4-340B"
+    ]
+  },
+  {
     name: "Others",
     models: [
       "Apple Intelligence 18.2",
       "Nova Models",
-      "QWEN QWQ",
-      "QWEN 2.5 CODER",
-      "QWEN 2",
-      "QWEN",
-      "DEEPSEEK-R1-LITE",
-      "DeepSeek 2",
-      "DeepSeek",
-      "Mistral Large 2",
-      "Mistral Large (Le Chat)",
       "Nous (Hermes 3 70B)",
-      "NVIDIA (LLAMA-3.1-NEMOTRON-70B, NVIDIA NEMOTRON-4-340B)",
       "Perplexity",
       "REFLECTION-70B",
       "Reka (Reka Core)",
@@ -71,7 +92,7 @@ export default function SupportedModels() {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           Supported AI Models
         </h2>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {modelCategories.map((category, index) => (
             <Card key={index} className="border-primary/10">
